@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header.sticky{
+    background: #fff;
+    padding: 0px 15px;;
+    transition: 1s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+ }
+ header.sticky .header-container li a{
+     color: #000;
+ }
+ header.sticky .header-container li a:hover{
+    color: #00b69f;
+ }
+ header.sticky .logo{
+     color: #000;
+ }
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    padding: 10px 15px;
+    transition: 1.2s;
+}
+.logo{
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+    0%{
+        background-position: left 0px top 10px;
+    }
+    40%{
+        background-position: left 800px top 10px;
+    }
+}
+.header-container{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0 0 ;
+    
+  
+}
+.header-container li{
+    padding: 0 15px;
+}
+.header-container li a{
+    text-decoration: none;
+    color:#fff;
+    transition: transform .2s;
+}
+.header-container li a:hover{
+    color: #00b69f;
+}.owl-nav{
+    display: none;
+}
+.owl-dots{
+    display: none;
+}
+
+
+section.content .container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.category-box{
+    width: 25;
+}
+.category{
+    
+    width: 200px;
+    height: 300px;
+    border: 1px solid #ccc;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.1);
+}
+.category h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ccc;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    box-shadow: rgba(25, 25, 25, 0.8);
+}
+.category-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.category-item a{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #000;
+}
+.category-item a:hover{
+    color: #00b69f;
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+.product-box{
+    width: 75%;
+}
+.product{
+    
+}
+.product-item{
+   display: flex;
+    justify-content: space-around;
+}
+.product-inner{
+    text-align: center;
+}
+.product-inner img{
+    width: 300px;
+    max-height: 100%;
+    object-fit: cover;
+}
