@@ -38,15 +38,9 @@ public class Home extends HttpServlet {
 		response.setContentType("text/html;charset=UTF-8");
 		DAO dao = new DAO();
 		List<Product> list = dao.getAllProduct();
-		List<Category> listCategory = dao.getAllCategory();
-		List<Banner> listBanner = dao.getAllBanner();
-
-		
-
-		
+		List<Category> listCategory = dao.getAllCategory();	
 		request.setAttribute("listProduct", list);
 		request.setAttribute("listCategory", listCategory);
-		request.setAttribute("listBanner", listBanner);
 		request.getRequestDispatcher("Home.jsp").forward(request, response);
 	}
 
